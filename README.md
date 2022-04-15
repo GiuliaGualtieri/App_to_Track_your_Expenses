@@ -12,6 +12,8 @@ This is an application for tracking your expenses created by Giulia Gualtieri.
 I've developed the application with Dash Python library. I also add a css file, thus the knowledge of HTML and CSS was required for implementing some custom features.  
 By using Dash, I've created this cool and fancy application to analyze the total expenses among different years.
 
+![Illustration](data/Illustration.png)
+
 ## Technologies
 The project is created with:  
 - Python: 3.10
@@ -19,7 +21,7 @@ The project is created with:
 
 ## Run the app
 First of all, install a virtual environtment using `pip install virtualenv`. See the documentation at https://docs.python.org/3/library/venv.html.  
-Then create an venv space, activate it, install the dependencies and 
+Then create an venv space, activate it, install the dependencies and run the `app.py`.
 ```
 git clone https://github.com/GiuliaGualtieri/App_to_Track_your_Expenses
 cd App_to_Track_your_Expenses
