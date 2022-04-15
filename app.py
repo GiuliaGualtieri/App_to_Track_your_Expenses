@@ -6,7 +6,7 @@ from pandas.core.frame import DataFrame
 import plotly.graph_objects as go
 from plotly.subplots import make_subplots
 
-#df = pd.read_csv('expenses_GG_2021.csv', sep=';', header=0)
+#df = pd.read_csv('data/expenses_GG_2021.csv', sep=';', header=0)
 my_palette_colors_bar_plot = ['#7FAFFF','#CC55AA','#CCCCFF']
 my_palette_colors_pie_chart = ['rgb(8,48,107)', 'rgb(8,81,156)', 'rgb(33,113,181)', 'rgb(66,146,198)', 'rgb(107,174,214)', 'rgb(158,202,225)', 'rgb(198,219,239)', 'rgb(222,235,247)', 'rgb(247,251,255)', 'rgb(204,204,255)', 'rgb(229,204,255)']
 
@@ -50,7 +50,7 @@ app.layout = html.Div([
     Input('checklist-year', 'value'))
 def update_figure(selected_year_pie_chart,selected_year_bar_plot):
     var_year_dropdown = selected_year_pie_chart
-    name_file = 'expenses_GG_'+var_year_dropdown+'.csv'
+    name_file = 'data/expenses_GG_'+var_year_dropdown+'.csv'
     df_pie_chart = pd.read_csv(name_file,sep=';', header=0)
 
     fig_pie_chart = make_subplots(
@@ -92,7 +92,7 @@ def update_figure(selected_year_pie_chart,selected_year_bar_plot):
     columns_name = ['Total Expenses','Category','Year']
     df_bar_plot = pd.DataFrame(columns=columns_name)
     for i in range(L):
-      name_file_i = 'expenses_GG_'+var_year[i]+'.csv'
+      name_file_i = 'data/expenses_GG_'+var_year[i]+'.csv'
       df_i = pd.read_csv(name_file_i,sep=';', header=0)
       df_i['Year'] = var_year[i]
       df_bar_plot=df_bar_plot.append(df_i)
