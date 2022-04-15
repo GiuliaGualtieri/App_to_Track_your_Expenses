@@ -42,4 +42,4 @@ My actuals developing points are the followings:
 
 
 ## Contact
-My email: giulia-gualtieri@alice.it
+My email: giulia.gualtieri@mail.polimi.it
